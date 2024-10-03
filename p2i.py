@@ -1,7 +1,10 @@
+import os
 import tkinter as tk
 from tkinter import filedialog
 import img2pdf
-import os
+
+# Change the working directory to the directory where this script is located
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def images_to_pdf():
     # Open file dialog to select image files
